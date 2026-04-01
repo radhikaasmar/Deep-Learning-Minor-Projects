@@ -4,6 +4,9 @@ This repository contains a FastAPI-based dialogue summarization app using a T5 m
 
 ## Setup
 
+1. Run `t5_dialogue_summarizer.ipynb` file
+
+   Make sure the `saved_summary_model` folder is placed in the root directory of this project.
 
 2. Create and activate a virtual environment:
    ```bash
@@ -26,5 +29,5 @@ uvicorn app:app --reload --host 127.0.0.1 --port 8000
 
 Then open: `http://127.0.0.1:8000`
 
-## ⚠️ Important Note
-Make sure the `saved_summary_model` folder (generated after running the `.ipynb` file) is placed in the root directory of this project.
+
+
