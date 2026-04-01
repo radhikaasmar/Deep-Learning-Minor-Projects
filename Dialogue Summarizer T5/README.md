@@ -26,4 +26,5 @@ uvicorn app:app --reload --host 127.0.0.1 --port 8000
 
 Then open: `http://127.0.0.1:8000`
 
-<p style="color:red;"><b>Important:</b> Make sure the <code>saved_summary_model</code> folder (generated after running the <code>.ipynb</code> file) is placed in the root directory of this project.</p>
+## ⚠️ Important Note
+Make sure the "saved_summary_model" folder (generated after running the <code>.ipynb</code> file) is placed in the root directory of this project.
