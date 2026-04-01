@@ -26,19 +26,5 @@ uvicorn app:app --reload --host 127.0.0.1 --port 8000
 
 Then open: `http://127.0.0.1:8000`
 
-## Notes
-
-- In `app.py`, use `from fastapi import FastAPI, Request` (not `Requests`).
-- If your editor says `import 'fastapi' could not be resolved`, ensure VS Code uses `.venv` interpreter and restart the window.
-
-## Optional dependencies
-
-- `uvicorn[standard]` (for production-ready async performance)
-- `transformers[sentencepiece]` (for some tokenizers)
-
-## Minimal lint/sanity check
-
-```bash
-python -c "from fastapi import FastAPI; print('fastapi', FastAPI)"
-python -c "from transformers import T5ForConditionalGeneration, T5Tokenizer; print('transformers loaded')"
-```
+## ⚠️ Important Note
+Make sure the 'saved_summary_model' folder (generated after running the '.ipynb' file) is placed in the root directory of this project.
