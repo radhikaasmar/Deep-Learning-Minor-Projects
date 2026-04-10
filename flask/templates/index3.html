@@ -1,0 +1,38 @@
+<!-- child 2 template extended from base template -->
+
+{% extends "layout.html" %}
+
+<!-- customization -->
+
+{% block title %} Child 2 {% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Main Page 2 </h1>
+  <p class="important">
+    Welcome to my child page, contact page
+
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+
+
+{% endblock %}
+
+{% block footer %}
+      &copy; Copyright 2010 by <a href="http://amazon.invalid/">Rads</a>.
+      {% endblock %}

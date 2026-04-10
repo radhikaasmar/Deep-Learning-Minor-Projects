@@ -1,0 +1,25 @@
+<!-- child template extended from base template -->
+
+{% extends "layout.html" %}
+
+<!-- customization -->
+
+{% block title %} Child {% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Main Page</h1>
+  <p class="important">
+    Welcome to my child page.
+    <p> Contact us at: <a href="/index3">Contact Here</a></p>
+{% endblock %}
+
+{% block footer %}
+      &copy; Copyright 2010 by <a href="http://amazon.invalid/">Rads</a>.
+      {% endblock %}
